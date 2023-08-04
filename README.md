@@ -20,7 +20,6 @@ The script searches for `<img>` tags in the webpage and downloads images from th
 - Filenames are generated based on the `alt` attribute of the `<img>` tag or the `title` attribute if the `alt` is missing. If both are unavailable, the filename is set to "image".
 - Filenames are sanitized to remove characters not allowed in file names, ensuring compatibility with your operating system.
 - Filenames are appended with an item ID extracted from the `<URL>` to avoid filename clashes.
-- Images with filenames starting with "Foto X di" (where X is a number), "Logo", "guzzilandia", and "Tech Weeks" are skipped to avoid unnecessary downloads.
 
 ### Dependencies
 

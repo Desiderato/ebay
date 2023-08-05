@@ -28,10 +28,6 @@ def sanitize_filename(filename):
     # Remove characters that are not allowed in file names
     return re.sub(r'[<>:"/\\|?*]', '_', filename)
 
-def is_valid_filename(filename):
-    # Check if the filename contains "Foto X di" followed by a number
-    return not re.match(r'^Foto \d+ di ', filename) and "Logo" not in filename and "guzzilandia" not in filename and "Tech Weeks" not in filename
-
 def get_images(url, folder_path):
     try:
         soup = make_soup(url)
